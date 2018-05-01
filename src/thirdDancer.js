@@ -4,14 +4,8 @@ var ThirdDancer = function(top, left, timeBetweenSteps) {
   this.setPositionThree(this.top, this.left);
 };
 
-
 ThirdDancer.prototype.constructor = ThirdDancer;
 ThirdDancer.prototype = Object.create(MakeBlinkyDancer.prototype);
-
-// ThirdDancer.prototype.step = function() {
-//   MakeDancer.prototype.step.call(this);
-//   this.$node.toggle();
-// };
 
 ThirdDancer.prototype.setPositionThree = function(top, left) {
   var styleSettings = {

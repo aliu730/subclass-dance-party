@@ -31,7 +31,6 @@ $(document).ready(function() {
   });
 
   $('.dancerTwoButton').on('click', function(event) {
-    //debugger;
     var dancerMakerFunctionNameTwo = $(this).data('dancerTwo');
 
     // get the maker function for the kind of dancer we're supposed to make
@@ -48,14 +47,12 @@ $(document).ready(function() {
   });
 
   $('.dancerThreeButton').on('click', function(event) {
-    //debugger;
     //var dancerMakerFunctionNameThree = $(this).data('ThirdDancer');
 
     // get the maker function for the kind of dancer we're supposed to make
-    //var dancerMakerFunction = window[dancerMakerFunctionNameThree];
-    console.log(ThirdDancer);
+
     // make a dancer with a random position
-    //debugger;
+
     var dancerThree = new ThirdDancer(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),

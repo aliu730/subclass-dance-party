@@ -7,11 +7,6 @@ var DancerTwo = function (top, left, timeBetweenSteps) {
 DancerTwo.prototype.constructor = DancerTwo;
 DancerTwo.prototype = Object.create(MakeBlinkyDancer.prototype);
 
-// DancerTwo.prototype.step = function() {
-//   MakeDancer.prototype.step.call(this);
-//   this.$node.toggle();
-// };
-
 DancerTwo.prototype.setPositionTwo = function(top, left) {
   var styleSettings = {
     top: this.top,
