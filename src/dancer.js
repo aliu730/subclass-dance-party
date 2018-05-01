@@ -40,14 +40,14 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
 };
 
 MakeDancer.prototype.step = function() {
-  setTimeout(this.step.bind(this), this.timeBetweenSteps)
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
 MakeDancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
     top: this.top,
     left: this.left
-  }
+  };
   this.$node.css(styleSettings);
-}
+};
 
