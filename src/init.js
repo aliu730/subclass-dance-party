@@ -29,7 +29,9 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
   $('.dancerTwoButton').on('click', function(event) {
+    //debugger;
     var dancerMakerFunctionName = $(this).data('dancerTwo');
 
     // get the maker function for the kind of dancer we're supposed to make
@@ -45,15 +47,16 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('.knucklesButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('knuckles');
+  $('.ButtonthirdDancer').on('click', function(event) {
+    //debugger;
+    var dancerMakerFunctionName = $(this).data('ThirdDancer');
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
 
-    var dancer = new Knuckles(
+    var dancer = new ThirdDancer(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
