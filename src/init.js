@@ -29,5 +29,36 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+  $('.dancerTwoButton').on('click', function(event) {
+    var dancerMakerFunctionName = $(this).data('dancerTwo');
+
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+
+    // make a dancer with a random position
+
+    var dancer = new DancerTwo(
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(dancer.$node);
+  });
+
+  $('.knucklesButton').on('click', function(event) {
+    var dancerMakerFunctionName = $(this).data('knuckles');
+
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+
+    // make a dancer with a random position
+
+    var dancer = new Knuckles(
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(dancer.$node);
+  });
 });
 
