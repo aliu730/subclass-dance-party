@@ -41,7 +41,8 @@ $(document).ready(function() {
     var dancerTwo = new DancerTwo(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
-      Math.random() * 1000
+      //Math.random() * 1000
+      2000
     );
     $('body').append(dancerTwo.$node);
   });
@@ -65,7 +66,7 @@ $(document).ready(function() {
     var size = $('body').width();
     var stringSize = String(size) + 'px';
     console.log(size);
-    $('.dancer').css('left', stringSize);
+    $('.dancer').css({'left': stringSize, 'opacity': '0.5'});
     $('.secondDancer').css('left', '0px');
     $('.thirdDancer').css('top', '0px');
   });

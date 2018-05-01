@@ -4,7 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
-  background-image: url("Ballroom.jpg");
+  background-image: url("under-the-water-2.jpg");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -30,9 +30,10 @@ body, a:link, a:visited, a:active{
 }
 
 .secondDancer {
-  border:15px solid red;
+  /*border:15px solid red;*/
   border-radius:20px;
   position:absolute;
+  animate
 }
 
 .thirdDancer{
