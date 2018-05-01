@@ -32,36 +32,36 @@ $(document).ready(function() {
 
   $('.dancerTwoButton').on('click', function(event) {
     //debugger;
-    var dancerMakerFunctionName = $(this).data('dancerTwo');
+    var dancerMakerFunctionNameTwo = $(this).data('dancerTwo');
 
     // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
+    var dancerMakerFunction = window[dancerMakerFunctionNameTwo];
 
     // make a dancer with a random position
 
-    var dancer = new DancerTwo(
+    var dancerTwo = new DancerTwo(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+    $('body').append(dancerTwo.$node);
   });
 
-  $('.ButtonthirdDancer').on('click', function(event) {
+  $('.dancerThreeButton').on('click', function(event) {
     //debugger;
-    var dancerMakerFunctionName = $(this).data('ThirdDancer');
+    //var dancerMakerFunctionNameThree = $(this).data('ThirdDancer');
 
     // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
-
+    //var dancerMakerFunction = window[dancerMakerFunctionNameThree];
+    console.log(ThirdDancer);
     // make a dancer with a random position
-
-    var dancer = new ThirdDancer(
+    //debugger;
+    var dancerThree = new ThirdDancer(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+    $('body').append(dancerThree.$node);
   });
 });
 

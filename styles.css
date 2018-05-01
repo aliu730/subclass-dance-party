@@ -11,7 +11,7 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 
-.title, .addDancerButton, .dancerTwoButton, .ButtonthirdDancer{
+.title, .addDancerButton, .dancerTwoButton, .dancerThreeButton{
   padding:5px 12px;
   float:right;
 }
@@ -29,7 +29,7 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.dancerTwo {
+.secondDancer {
   border:15px solid red;
   border-radius:20px;
   position:absolute;
