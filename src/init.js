@@ -54,11 +54,20 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancerThree = new ThirdDancer(
-      $('body').height() * Math.random(),
-      $('body').width() * Math.random(),
+      $('body').height() * Math.random(), //(distance from)top in px
+      $('body').width() * Math.random(),  //(distance from)left in px
       Math.random() * 1000
     );
     $('body').append(dancerThree.$node);
+  });
+  
+  $('.lineUp').on('click', function(event) {
+    var size = $('body').width();
+    var stringSize = String(size)+'px';
+    console.log(size);
+    $('.dancer').css('left', stringSize);
+    $('.secondDancer').css('left', '0px');
+    $('.thirdDancer').css('top', '0px');
   });
 });
 
