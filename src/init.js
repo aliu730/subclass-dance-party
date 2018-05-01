@@ -55,7 +55,7 @@ $(document).ready(function() {
 
     var dancerThree = new ThirdDancer(
       $('body').height() * Math.random(), //(distance from)top in px
-      $('body').width() * Math.random(),  //(distance from)left in px
+      $('body').width() * Math.random(), //(distance from)left in px
       Math.random() * 1000
     );
     $('body').append(dancerThree.$node);
@@ -63,7 +63,7 @@ $(document).ready(function() {
   
   $('.lineUp').on('click', function(event) {
     var size = $('body').width();
-    var stringSize = String(size)+'px';
+    var stringSize = String(size) + 'px';
     console.log(size);
     $('.dancer').css('left', stringSize);
     $('.secondDancer').css('left', '0px');
