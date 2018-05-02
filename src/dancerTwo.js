@@ -18,11 +18,12 @@ DancerTwo.prototype.setPositionTwo = function(top, left) {
 
 DancerTwo.prototype.step3 = function() {  
 
-  MakeDancer.prototype.step.call(this);
+  //MakeDancer.prototype.step.call(this);
   var coordinateY = this.top;
   //coordinateY -= 50;
   var coordinateX = this.left;
   (this.$node).animate({left: 0}, {duration: 5000});
+  // (this.$node).css(rotate(180deg));
   (this.$node).animate({left: 1400}, {duration: 5000});
   setTimeout(this.step3.bind(this), 10000);
 };

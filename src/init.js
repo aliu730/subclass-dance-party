@@ -67,8 +67,13 @@ $(document).ready(function() {
     var stringSize = String(size) + 'px';
     console.log(size);
     $('.dancer').css({'left': stringSize, 'opacity': '0.5'});
-    $('.secondDancer').css('left', '0px');
+    $('.secondDancer').css('top', '0px');
     $('.thirdDancer').css('top', '0px');
+  });
+
+  $('body').on('mouseover', '.secondDancer', function (event) {
+    console.log('hi');
+    $(this).css('top', '0px');
   });
 });
 
