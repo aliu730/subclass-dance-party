@@ -37,7 +37,5 @@ body, a:link, a:visited, a:active{
 }
 
 .thirdDancer{
-  border: 20px solid purple;
-  border-radius:30px;
   position:absolute;
 }

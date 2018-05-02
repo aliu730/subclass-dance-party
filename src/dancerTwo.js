@@ -22,8 +22,8 @@ DancerTwo.prototype.step3 = function() {
   var coordinateY = this.top;
   //coordinateY -= 50;
   var coordinateX = this.left;
-  (this.$node).animate({left: 0}, {duration: 5000});
+  (this.$node).animate({left: Math.random() * 1400}, {duration: Math.min(2000, Math.random() * 5000)});
   // (this.$node).css(rotate(180deg));
-  (this.$node).animate({left: 1400}, {duration: 5000});
-  setTimeout(this.step3.bind(this), 10000);
+  (this.$node).animate({left: Math.random() * 1400}, {duration: Math.min(2000, Math.random() * 5000)});
+  setTimeout(this.step3.bind(this), Math.random() * 8000);
 };

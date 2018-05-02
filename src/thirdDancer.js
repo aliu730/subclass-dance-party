@@ -1,6 +1,6 @@
 var ThirdDancer = function(top, left, timeBetweenSteps) {
   MakeBlinkyDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="thirdDancer"></span>'); 
+  this.$node = $('<span class="thirdDancer"><img src="magikarpEgg.gif"></span>'); 
   this.setPositionThree(this.top, this.left);
 };
 
